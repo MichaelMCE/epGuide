@@ -1,0 +1,38 @@
+APP_ICON		ICON		"icons/guide.ico"
+APP_PRIMARY		ICON		"icons/vlc.ico"
+BM_FREQ			BITMAP		"icons/playing13.bmp"
+
+
+
+#define VERSION_NUMBER		16,04,13,806
+#define VERSION_NUMBER_STR "16,04,13,806"
+
+
+1 VERSIONINFO
+FILETYPE 2
+FILEOS 4
+PRODUCTVERSION VERSION_NUMBER
+FILEVERSION VERSION_NUMBER
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "340904E4"
+    BEGIN
+      VALUE "Comments", "mylcd.sourceforge.net"
+      VALUE "CompanyName", "mylcd.sourceforge.net"
+      VALUE "ProductName", "epGuide"
+      VALUE "ProductVersion", VERSION_NUMBER_STR
+      VALUE "FileVersion", "16042019-0.80.6"
+      VALUE "FileDescription", "epGuide"
+      VALUE "LegalCopyright", "Copyright \251 2019 Michael McElligott - http://mylcd.sourceforge.net"
+      VALUE "LegalTrademarks", "VLC media player is a registered trademark of VideoLAN"
+      VALUE "OriginalFilename", "epGuide.exe"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x3409, 0x4E4
+  END
+END
+
+
