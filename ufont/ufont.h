@@ -1,10 +1,5 @@
 
-// libmylcd
-// An LCD framebuffer library
-// Michael McElligott
-// okio@users.sourceforge.net
-
-//  Copyright (c) 2005-2009  Michael McElligott
+//  Copyright (c) Michael McElligott
 // 
 //  This program is free software; you can redistribute it and/or
 //  modify it under the terms of the GNU LIBRARY GENERAL PUBLIC LICENSE
@@ -15,6 +10,8 @@
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU LIBRARY GENERAL PUBLIC LICENSE for details.
+
+
 
 #ifndef _UFONT_H_
 #define _UFONT_H_
@@ -208,14 +205,14 @@
 
 
 
-typedef struct __attribute__((packed)){
+typedef struct /*__attribute__((packed))*/{
 	int16_t x1;
 	int16_t y1;
 	int16_t x2;
 	int16_t y2;
 }_rect_t;
 	
-typedef struct __attribute__((packed)){
+typedef struct /*__attribute__((packed))*/{
 	uint16_t ident;						// version ident
 
 	struct __attribute__((packed)){
@@ -238,7 +235,7 @@ typedef struct __attribute__((packed)){
 	}fbb;
 }_ufont_header_t;
 
-typedef struct __attribute__((packed)){
+typedef struct /*__attribute__((packed))*/{
 	uint8_t w;				// [bbx] width of this glyph		// this limits glyphs to a max width/height of 255/255
 	uint8_t h;				// [bbx] height of this glyph
 	int8_t xOffset;			// [bbx] x offset of glyph within frame
@@ -247,19 +244,19 @@ typedef struct __attribute__((packed)){
 	int16_t length;			// length of pixel data (which follows this)
 }_glyph_t;
 
-typedef struct __attribute__((packed)){
+typedef struct /*__attribute__((packed))*/{
 	_glyph_t glyph;
 	uint8_t *pixels;
 	uint16_t encoding;
 }_cache_glyph_t;
 
-typedef struct __attribute__((packed)){
+typedef struct/* __attribute__((packed))*/{
 	uint32_t offset;		// location within file
 	uint16_t encoding;		// unicode codepoint
 }_lookup_t;
 
 
-typedef	struct  __attribute__((packed)){
+typedef	struct /* __attribute__((packed))*/{
 	uint8_t blockLoaded;		// current block in memory
 	uint8_t blockTotal;
 	uint16_t entriesPerBlock;
@@ -299,7 +296,7 @@ typedef struct {
 
 //typedef void (*pvid_t) (void *ptr, int x, int y);
 
-typedef struct __attribute__((packed)){
+typedef struct/* __attribute__((packed))*/{
 	_ufont_header_t header;
 
 	struct {

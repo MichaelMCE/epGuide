@@ -1,10 +1,5 @@
 
-// libmylcd
-// An LCD framebuffer library
-// Michael McElligott
-// okio@users.sourceforge.net
-
-//  Copyright (c) 2005-2009  Michael McElligott
+//  Copyright (c) Michael McElligott
 // 
 //  This program is free software; you can redistribute it and/or
 //  modify it under the terms of the GNU LIBRARY GENERAL PUBLIC LICENSE
@@ -16,7 +11,7 @@
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU LIBRARY GENERAL PUBLIC LICENSE for details.
 
-//#pragma GCC optimize ("-O2")
+
 
 
 #include <stdio.h>
@@ -2245,7 +2240,7 @@ int fontPrint (_ufont_t *font, int *desX, int *desY, const uint8_t *str)
 		*desY = yy;
 	}
 	
-	*desX += 1;
+	//*desX += 1;
 	*desX += font->render.glyphPadding;
 
 	return ct;
@@ -2441,7 +2436,7 @@ int fontPrint8 (_ufont_t *font, int *desX, int *desY, const uint8_t *str)
 		*desY = yy;
 	}
 	
-	*desX += 1;
+	//*desX += 1;
 	*desX += font->render.glyphPadding;
 	
 	return ct;
