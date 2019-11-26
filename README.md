@@ -1,8 +1,8 @@
-epGuide - A DVB Programme Guide viewer and launcher.
+epGuide - A DVB Programme Guide aggregator and launcher.
 
-Displays Digital TV channels and programmes as retrieved from an attached DVB-T USB dongle.
+Displays Digital TV channels and programmes/listings as retrieved from an attached DVB-T USB dongle.
 
-This is also an example of using the uFont library and libvlc.
+This is also an example of using the uFont library.
 
 
-![screenshots of app](./screen.png)
+![screenshots of app](./screenshots/screen.png)

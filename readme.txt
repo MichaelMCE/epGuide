@@ -1,14 +1,11 @@
-epGuide - A DVB-T Programme Guide viewer.
+epGuide - epGuide - A DVB Programme Guide aggregator and launcher.
 
 Displays Digital TV listings as retrieved from an attached DVB-T USB dongle.
 
 
 
-This project is the product a task I set myself to determine how rapidly could I produced a usable & to spec application.
-Secondary goal as a demonstration of the uFont library.
+This was a product not intended for public release, but here it is anyway.
 
-
-Not intended for public release!
 
 For a general release few things:
   Remove all static objects (throw them in a data structure to be forgotten..).
