@@ -16,7 +16,7 @@ ARCH = -march=native -mtune=native
 endif
 
 
-INCLUDE_DIR= -IK:/code/ui/epg/sdk/include/ -I"../include/" -I"include/" 
+INCLUDE_DIR= -Iepg/sdk/include/ -I"../include/" -I"include/" 
 LIB_DIR = -L"lib/$(MDIR)/" -Lepg/sdk/lib/ -L"lib" 
 WINVER = -D_WIN32 -D_WIN32_WINNT=0x0701 -DWINVER=0x0701 -D__WIN32__=1 
 SSEMMX = -DUSE_MMX -DHAVE_MMX -DHAVE_MMX1 -DUSE_MMX1 -mmmx -msse -mfpmath=sse,387 
@@ -86,9 +86,6 @@ EXAMPLES=guide.exe _guide.exe
 guide.exe: $(PRGOBJECTS) $(UFONTOBJECTS) $(ZLIB) $(PNG) $(LIBMYLCD)
 _guide.exe: $(PRGOBJECTS) $(UFONTOBJECTS) $(ZLIB) $(PNG) $(LIBMYLCD)
 
-# -static-libgcc 	strip.exe $@
-# xcopy guide.exe M:\RamDiskTemp\vlc /y /q
-#  -mwindows
 
 %.exe: 
 	windres --output-format=coff $(RESTARGET) -i guide.rc -o res.o
