@@ -14,7 +14,7 @@ insert_final_newline = true
 [*.{js,jsx,html,sass,scss,css}]
 charset = utf-8
 
-[*.{c,h,cpp,x}]
+[*.{c,h,cpp,x,ino}]
 indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
